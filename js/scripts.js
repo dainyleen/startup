@@ -1,9 +1,4 @@
-let fetchData;
+// API for returning 12 random users
+url = 'https://randomuser.me/api/?results=12&nat=nz'
 
-// Fetch data from Random User API
-let result = fetch('https://randomuser.me/api/?results=12')
-  .then()
-  .then(data => data.json())
-  .then()
-  .then()
 
