@@ -1,7 +1,13 @@
 /***********
  FETCH CALL
 ***********/
+async function fetchEmployees(url) {
+  const response = await fetch(url)
+  const data = await response.json()
+  return data
+}
 
+// API for returning information of 12 random users
 url = 'https://randomuser.me/api/?results=12&nat=nz'
 const employeeInfo = fetchEmployees(url)
 displayEmployeeGallery(employeeInfo)
