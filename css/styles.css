@@ -1,1 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Yomogi&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Yomogi', cursive;
+  text-align: center;
+  background: lightyellow;
+}
+
+header {
+  padding: 15px 5px 5px;
+}
+
+.header-inner-container {
+  max-width: 1180px;
+  margin: auto;
+}
+
+header h1 {
+  font-size: 1.5em;
+  margin-top: 35px;
+}
+
+/* GALLERY */
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.fState:focus {
+  background: lime;
+  border: 2px solid lightgreen;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  cursor: pointer;
+  width: 100%;
+  max-width: 360px;
+  margin: 10px 10px 20px;
+  padding: 10px;
+  border-radius: 0.25em;
+  border: 1px solid;
+  transition: .4s ease-out;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 95px;
+  margin: 10px 15px auto 10px;
+  border-radius: 50%;
+}
+
+.card-info-container {
+  text-align: left;
+}
+
+.card-name {
+  margin: 20px auto 0;
+}
+
+.card-text {
+  font-size: 0.9em;
+  margin: 7px auto;
+  transition: .4s ease-out;
+}
+
+.cap {
+  text-transform: capitalize;
+}
