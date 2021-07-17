@@ -22,13 +22,17 @@ function displayEmployeeGallery(employeeInfo) {
 
       // Add HTML to the gallery to be displayed
       const html = `
-      <div>
-      <div>
+      <div class="card" id="${i + 1}">
+      <div class="card-img-container">
+        <img class="card-img" src="${profileImage}" alt="profile picture">
       </div>
-      <div>
+      <div class="card-info-container">
+        <h3 id="name" class="card-name cap">${name.first} ${name.last}</h3>
+        <p class="card-text">${email}</p>
+        <p>${location.city}, ${location.country}</p>
       </div>
-      </div>
-      `
+      </div>`
+      gallery.insertAdjacentHTML('beforeend', html)
     }
   })
 }
