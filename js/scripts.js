@@ -48,6 +48,9 @@ function displayEmployeeGallery(employeeInfo) {
 ******/
 
 // Listen for a click on an employee card
-
+$('.gallery').on('click', '.card', function(event) {
+  employeeNumber = parseInt(event.currentTarget.getAttribute('id') - 1)
+  const modalGallery = document.getElementById('gallery')
+})
 
 
