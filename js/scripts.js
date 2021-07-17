@@ -75,4 +75,10 @@ $('.gallery').on('click', '.card', function(event) {
   })
 })
 
+// Closing the modal
+$('.gallery').on('click', '#modal-close-btn', function(event) {
+  const modalContainer = document.querySelector('.modal-container')
+  modalContainer.remove()
+})
+
 
