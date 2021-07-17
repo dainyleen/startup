@@ -43,3 +43,11 @@ function displayEmployeeGallery(employeeInfo) {
   })
 }
 
+/******
+ MODAL
+******/
+
+// Listen for a click on an employee card
+
+
+
