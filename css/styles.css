@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Yomogi&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Yomogi', cursive;
+  text-align: center;
+  background: lightyellow;
+}
+
+header {
+  padding: 15px 5px 5px;
+}
+
+.header-inner-container {
+  max-width: 1180px;
+  margin: auto;
+}
+
+header h1 {
+  font-size: 1.5em;
+  margin-top: 35px;
+}
+
+/* GALLERY */
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.fState:focus {
+  background: lime;
+  border: 2px solid lightgreen;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  cursor: pointer;
+  width: 100%;
+  max-width: 360px;
+  margin: 10px 10px 20px;
+  padding: 10px;
+  border-radius: 0.25em;
+  border: 1px solid;
+  transition: .4s ease-out;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 95px;
+  margin: 10px 15px auto 10px;
+  border-radius: 50%;
+}
+
+.card-info-container {
+  text-align: left;
+}
+
+.card-name {
+  margin: 20px auto 0;
+}
+
+.card-text {
+  font-size: 0.9em;
+  margin: 7px auto;
+  transition: .4s ease-out;
+}
+
+.cap {
+  text-transform: capitalize;
+}
+
+/* MODAL */
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal {
+  position: relative;
+  width: 95%;
+  max-width: 420px;
+  min-height: 425px;
+  margin: 10px auto auto;
+  padding-bottom: 15px;
+  background: lightgreen;
+  border-radius: 0.25em;
+  border: 1px solid;
+  transition: .4s ease-out;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  color: lightgreen;
+  background: lightsalmon;
+  outline: none;
+  border-radius: 0.25em;
+  border: 1px solid lightseagreen;
+}
+
+.modal-img {
+  width: 150px;
+  margin-top: 35px;
+  border-radius: 50%;
+}
+
+.modal-name {
+  margin-bottom: 5px;
+}
+
+.modal-text {
+  margin: 10px;
+}
+
+.modal hr {
+  width: 75%;
+  margin: 25px auto 30px;
+  border-color: darkseagreen;
+}
+
+.modal-btn-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  width: 95%;
+  max-width: 420px;
+  padding: 10px 15px 15px;
+  margin: 10px auto auto;
+  background: darkseagreen;
+  border-radius: 0.25em;
+  border: 1px solid;
+}
+
+.modal-btn-container .btn {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  color: aquamarine;
+  padding: 0.75em 1.5em;
+  background: aquamarine;
+  border-radius: 0.35em;
+  transition: .4s ease-out;
+  outline: none;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+  .header-inner-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .header-text-container {
+    text-align: left;
+  }
+  .modal {
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card:hover,
+  .card:focus {
+    background: aquamarine;
+    border: 3px solid;
+  }
+  .card:hover .card-text {
+    color: chartreuse;
+  }
+  .btn:hover {
+    background: chocolate;
+    color: coral;
+  }
+}
