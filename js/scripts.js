@@ -67,7 +67,6 @@ $('.gallery').on('click', '.card', function(event) {
         <hr>
         <p class="modal-text">Mobile: ${employee.cell}</p>
         <p class="modal-text">Address: ${employee.location.street.number} ${employee.location.street.name}, ${employee.location.country}, ${employee.location.postcode}</p>
-        <p class="modal-text">Birthday: ${employee.dob.date}</p>
       </div>
     </div>
     </div>`
