@@ -6,4 +6,6 @@ Building an app which lets employees (within a fictional start-up company) share
 
 https://dainyleen.github.io/startup
 
-*This project is from TeamTreehouse - Tech Degree curriculum
+### Tech Talk
+in progress...
+
