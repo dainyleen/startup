@@ -9,5 +9,4 @@ in progress...
 
 
 
-###### The project concept is from TeamTreehouse - Tech Degree curriculum
 
