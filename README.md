@@ -4,8 +4,7 @@ Building an app which lets employees (within a fictional start-up company) share
 ## GitHub Page
 https://dainyleen.github.io/startup
 
-### Tech Talk
-in progress...
+
 
 
 
